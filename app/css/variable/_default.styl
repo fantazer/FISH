@@ -1,0 +1,57 @@
+a:hover
+	text-decoration none
+a
+	text-decoration none
+	color black
+.bold
+	font-weight 600
+html 
+	box-sizing border-box
+*,
+*:before,
+*:after 
+	box-sizing: inherit
+img,
+video,
+iframe 
+	max-width 100%
+	height auto
+	border 0
+	-ms-interpolation-mode bicubic
+	display block
+
+input,textarea
+	border 0px
+	padding 10px 15px
+	border 1px solid grey
+	resize: none
+	outline: 0 !important
+	
+button
+	br(4px)
+	tr(all)
+	border 0px
+	display inline-block
+	margin-bottom 20px
+	font-size 20px
+	padding 10px 30px
+	background red
+	color white
+	&:hover
+		background darken(red,10)
+	form
+		display block
+
+table
+	table(true,false)
+
+//responsive table	
+.small-only
+	+below(768px)
+		display table
+	display none
+	
+.large-only
+	+below(768px)
+		display none
+

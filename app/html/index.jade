@@ -1,0 +1,157 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+.main-cont
+	//header
+	.header
+		.header__logo
+			img(src="img/logo.png", alt="")
+		.header__contact
+			.header__info
+				.header__info-icon
+					i.icon.icon-phone-call
+				.header__info-phone
+					.header__info-phone-el + 7 (915) 876-66-77
+					.header__info-phone-el + 7 (915) 876-66-77
+		.header__menu
+			.header__menu-el  
+				a(href="#About" rel='m_PageScroll2id') О компании
+			.header__menu-el  
+				a(href="#Price" rel='m_PageScroll2id') Цены
+			.header__menu-el  
+				a(href="#Deliv" rel='m_PageScroll2id') Доставка
+			.header__menu-el  
+				a(href="#Cont" rel='m_PageScroll2id') Контакты
+	//header-end
+
+//baner
+.baner
+	.main-cont
+		.baner-wraper
+			.baner-info
+				.baner-text
+					strong Компания «СевРыба» 
+					| осуществляет продажу свежезамороженной рыбы 
+					strong оптом по самым низким ценам!
+
+				a(href="price.pdf").btn.btn--md Скачать прайс-лист
+// Title
+.title#About
+	.main-cont
+		.title-text О компании
+
+//content
+.info
+	.main-cont
+		.info__hellow
+			.type.type--bold Рады приветствовать Вас на нашем сайте!
+
+			p Основным направлением деятельности нашей компании является оптовая продажа свежезамороженой рыбы и других морепродуктов. Мы также можем предложить Вам мелкооптовую и розничную (по избранным позициям) продажу рыбы и морепродуктов и возможность индивидуального заказа.
+
+			p Мы предлагаем морепродукты оптом от промысловыми компаниями из Мурманска. Так как мы работаем напрямую с рыболовецкими и промысловыми компаниями Мурманска, это дает нам возможность предложить своим клиентами самые низкие цены.
+
+			p Наша компания располагает большими складскими помещениями, соответственно оборудованными и технически оснащенными, парком оборудованных для доставки рыбной продукции автомобилей. Мы организуем доставку рыбы и морепродуктов по Ярославлю, Ярославской области и другим регионам России. Осуществляем доставку рыбы в магазины.
+		//advant
+		.info__adv
+			.type.type--bold Почему нас выбирают?
+			.info__adv-wrap
+				.info__adv-el
+					.info__adv-icon
+						i.icon.icon-safe-box
+					.info__adv-text Самые низкие цены
+				.info__adv-el
+					.info__adv-icon
+						i.icon.icon-discount
+					.info__adv-text Гибкая система скидок
+				.info__adv-el
+					.info__adv-icon
+						i.icon.icon-truck
+					.info__adv-text Быстрая доставка товара
+				.info__adv-el
+					.info__adv-icon
+						i.icon.icon-approve-invoice
+					.info__adv-text Полный пакет документов 
+
+// Title
+.title#Price
+	.main-cont
+		.title-text Цены
+
+//Price text
+.price-info
+	.main-cont
+		p Мы предлагаемВам ознакомиться со стоимостью нашей продукции. 
+		p Наши цены являются самыми низкими в Ярославле и Ярославской области.
+		<br>
+		P.type--md Важно! Цены на сайте представлены в ознакомительном порядке. 
+		P Каждые две недели мы обновляем прайс-лист. Чтобы узнать самые актуальные цены на нашу продукцию, рекомендуем скачать <br>прайс-лист по сылке ниже или получить консультацию менеджера, позвонив по телефонам: +7 (903) 690-35-88, +7 (920) 142-61-70
+//btn-row
+.main-cont
+	.btn-row
+		a(href="price.pdf").btn.btn--md Скачать прайс-лист
+
+//table-price
+.table-price
+	.main-cont
+		table
+			thead
+				tr
+					td Рыбопродукция
+					td Цена за килограмм
+			tbody
+				- for (var i = 0; i < 6; i++)
+					tr
+						td Скумбрия 200-300 н/р (улов 05.07.2016)
+						td 93 руб./кг.
+
+//table-price-end
+
+// Title
+.title.title--none-marg#Deliv
+	.main-cont
+		.title-text Условия доставки
+
+//Map
+.map
+	.main-cont
+		.contact
+			.contact-wraper
+				p Наша компания осуществляет доставку рыбы и морепродуктов при заказе от 25 000 руб и в более крупных объемах. В зону нашей логистики входят: г. Ярославль, Ярославская область, а также другие города находящиеся приблизительно в радиусе 300 км от г. Ярославль.
+
+				p Чтобы получить наше индвивидуальное предложение по заказу и доставке, заполните форму ниже:
+
+				form( action="javascript:void(null);").main-form
+					input(type="text" placeholder="Фамилия Имя Отчество" name="name").form__name
+					input(type="text" placeholder="Адрес электронной почты" name="email").form__email
+					input(type="text" placeholder="Телефон" name="phone").form__phone
+					input(type="submit" value="Отправить заявку" ).btn.btn--md.form__send
+					.sucsses Ваша заявка принята
+
+				p Для того чтобы узнать цены, 
+					a(href="price.pdf").download-link скачайте прайс-лист
+// Title
+.title.title--none-marg
+	.main-cont
+		.title-text Контакты
+//Adress
+.adress#Cont
+	.main-cont
+		.adress__el.type--md Наш адрес:
+		.adress__el г.Ярославль, ул. Менделеева, д. 3, офис 306
+		.adress__el.type--md Телефоны:
+		.adress__el  +7 915 565 56 55, +7 915 678 78 78
+//Footer
+.footer
+
+
+
+
+
+
+
+
+include ./block_html/_script.jade
+
+
+
+

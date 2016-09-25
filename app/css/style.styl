@@ -1,0 +1,177 @@
+@import 'rupture'
+@import 'jeet'
+@import "variable/_constant.styl"
+@import "variable/_function.styl"
+@import "variable/_ie.styl"
+@import "icon/sprite.css"
+@import "icon/style.css"
+@import "variable/_default.styl"
+@import "variable/_element.styl"
+@import "variable/_fonts.styl"
+
+rupture.scale = 0 480px 768px 992px 1200px
+rupture.scale-names = 'xs' 'sm' 'md' 'lg'
+jeet.gutter = 1
+
+body
+	font-size 14px
+	font-family 'Roboto'
+	color #363636
+	font-weight 300
+.main-cont
+	center(960px)
+	position relative
+	width 100%
+	padding  0 10px
+	min-width 960px
+	+above(960px)
+		width 960px
+.icon
+	color blue
+	font-size 30px 
+.header
+	padding 15px 0 
+	flex(between)
+//.header__logo 
+//.header__contact 
+.header__info 
+	flex(mid)
+.header__info-icon 
+	margin-right 20px
+	.header__info-phone 
+		size 50px 50px
+		border 1px solid blue
+//.icon-phone-call 
+.header__info-phone-el
+	color #004279
+	font-family Roboto
+	font-size 18px
+	font-weight 400
+	margin-bottom 5px
+.header__menu
+	flex(between) 
+	width 360px
+.header__menu-el 
+	color #363636
+	font-size 16px
+
+//baner
+.baner
+	padding 50px 0
+	bgi("bg.jpg")
+	background-repeat repeat
+	width 100%
+.baner-wraper
+	height 490px
+	bgi("baner.jpg")
+.baner-info
+	width 50%
+	background rgba(255, 255, 255, 0.81)
+	height 100% 
+	flex(mid)
+	fl()
+	fw()
+	align-items flex-start
+	padding 0 50px	
+.baner-text
+	color #004279
+	font-size 20px
+	font-weight 300 
+	margin-bottom 20px
+	width 100%
+//Title
+.title
+	background #f1f1f1
+	padding 40px 0 
+	text-align center
+	font-size 30px
+	font-weight 400
+	color blue
+	margin-bottom 20px
+	width 100%
+.info
+	text-align center
+.info__hellow
+	margin-bottom 40px
+.info__adv-wrap
+	flex(between)
+	margin-top 70px
+	margin-bottom 120px
+	.icon
+		font-size 60px
+		margin-bottom 40px
+.price-info
+	text-align center
+	p
+		margin 3px
+.btn-row
+	padding 40px 0
+	flex(mid)
+	a
+		display inline-block
+.table-price
+	margin-bottom 100px
+	td
+		padding 20px 10px 20px 40px
+	thead
+		background #f1f1f1 
+		td
+			font-size 18px
+.title--none-marg
+	margin-bottom 0
+.map
+	+below(1024px)
+		background-position -150px 
+	bgi('map.png')	
+	background-size cover
+	background-position center 
+.contact
+	display flex
+	justify-content  flex-end
+.contact-wraper
+	width 540px
+	background white
+	padding 45px
+	height 100%
+	form
+		margin-top 30px
+	input
+		width 300px
+		margin-bottom 30px
+		border 1px solid #b5bfd2
+		border-radius 3px
+.download-link
+	color red
+	border-bottom 1px dotted red
+.adress
+	width 100%
+	padding 40px	
+	text-align center
+.adress__el
+	margin-bottom 30px
+.footer
+	height 160px
+	bgi('bg.jpg')
+	background-repeat repeat
+.main-form
+	.btn
+		text-align left
+		width auto
+		box-shadow 0 0 0
+		border 0px
+.error
+	display block
+	margin-top -20px
+	margin-bottom 30px
+	color red
+.sucsses
+	up()
+	padding 20px 30px
+	font-size 18px
+	color white
+	background green 
+	display inline-block
+	display none
+@import "../module/**/*"
+
+
