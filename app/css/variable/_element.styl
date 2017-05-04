@@ -143,6 +143,8 @@
 	width 100%
 	margin 0
 	animation:  slideInDown  1s 1 ease-in-out
+	z-index 10000
+	bsh()
 		
 .icon
 	display inline-block
@@ -150,7 +152,14 @@
 	&:before
 		line-height 50%
 		f()
-		
+
 strong
 	font-weight 400 
 
+.header-extend
+	padding-top 100px
+
+.nav-el-active
+	font-weight 700
+	border-bottom 2px solid red
+	padding-bottom 10px

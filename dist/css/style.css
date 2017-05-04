@@ -330,6 +330,9 @@ table thead:last-child tr:last-child th:last-child,table tbody:last-child tr:las
   margin: 0;
   -webkit-animation: slideInDown 1s 1 ease-in-out;
   animation: slideInDown 1s 1 ease-in-out;
+  z-index: 10000;
+  -webkit-box-shadow: 0px 3px 8px #e3e3e3;
+  box-shadow: 0px 3px 8px #e3e3e3;
 }
 
 .icon {
@@ -346,6 +349,16 @@ table thead:last-child tr:last-child th:last-child,table tbody:last-child tr:las
 
 strong {
   font-weight: 400;
+}
+
+.header-extend {
+  padding-top: 100px;
+}
+
+.nav-el-active {
+  font-weight: 700;
+  border-bottom: 2px solid #d2251c;
+  padding-bottom: 10px;
 }
 
 body {
@@ -460,11 +473,13 @@ body {
   background: url("../img/bg.jpg") no-repeat;
   background-repeat: repeat;
   width: 100%;
+  min-width: 960px;
 }
 
 .baner-wraper {
   height: 490px;
   background: url("../img/baner.jpg") no-repeat;
+  border: 3px solid #fff;
 }
 
 .baner-info {
@@ -513,6 +528,7 @@ body {
   color: #004279;
   margin-bottom: 20px;
   width: 100%;
+  min-width: 960px;
 }
 
 .info {
@@ -636,8 +652,9 @@ body {
 
 .adress {
   width: 100%;
-  padding: 40px;
+  padding: 40px 0;
   text-align: center;
+  min-width: 960px;
 }
 
 .adress__el {
@@ -648,6 +665,7 @@ body {
   height: 160px;
   background: url("../img/bg.jpg") no-repeat;
   background-repeat: repeat;
+  min-width: 960px;
 }
 
 .main-form .btn {

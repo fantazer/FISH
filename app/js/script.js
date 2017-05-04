@@ -2,7 +2,7 @@
     $(window).load(function(){
         $("a[rel='m_PageScroll2id']").mPageScroll2id({
 				    offset:100,
-				    highlightClass:"left-nav-el-active"
+				    highlightClass:"nav-el-active"
 				});
     });
  })(jQuery);
@@ -76,6 +76,20 @@ $(document).ready(function(){
 	            }
 	          });
 			})
+
+	//scroll header
+	var shrinkHeader = 300;
+	  $(window).scroll(function() {
+	    var scroll = $(this).scrollTop();
+	      if ( scroll >= shrinkHeader ) {
+	           $('.header-wraper').addClass('shrink');
+	           $('body').addClass('header-extend');
+	        }
+	        else {
+	            $('.header-wraper').removeClass('shrink');
+	           $('body').removeClass('header-extend');
+	        }
+	});
 	
 	/* ###### For SlideToggle Elements  ######*/
 	/*var hideToggle = function(targetClick,toggleEl) {

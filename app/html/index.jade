@@ -1,28 +1,29 @@
 include block_html/_style.jade
 include ../module/**/*.jade
 
-.main-cont
-	//header
-	.header
-		.header__logo
-			img(src="img/logo.png", alt="")
-		.header__contact
-			.header__info
-				.header__info-icon
-					i.icon.icon-phone-call
-				.header__info-phone
-					.header__info-phone-el + 7 (915) 876-66-77
-					.header__info-phone-el + 7 (915) 876-66-77
-		.header__menu
-			.header__menu-el  
-				a(href="#About" rel='m_PageScroll2id') О компании
-			.header__menu-el  
-				a(href="#Price" rel='m_PageScroll2id') Цены
-			.header__menu-el  
-				a(href="#Deliv" rel='m_PageScroll2id') Доставка
-			.header__menu-el  
-				a(href="#Cont" rel='m_PageScroll2id') Контакты
-	//header-end
+.header-wraper
+	.main-cont
+		//header
+		.header
+			.header__logo
+				img(src="img/logo.png", alt="")
+			.header__contact
+				.header__info
+					.header__info-icon
+						i.icon.icon-phone-call
+					.header__info-phone
+						.header__info-phone-el + 7 (915) 876-66-77
+						.header__info-phone-el + 7 (915) 876-66-77
+			.header__menu
+				.header__menu-el  
+					a(href="#About" rel='m_PageScroll2id') О компании
+				.header__menu-el  
+					a(href="#Price" rel='m_PageScroll2id') Цены
+				.header__menu-el  
+					a(href="#Deliv" rel='m_PageScroll2id') Доставка
+				.header__menu-el  
+					a(href="#Cont" rel='m_PageScroll2id') Контакты
+		//header-end
 
 //baner
 .baner
@@ -34,7 +35,7 @@ include ../module/**/*.jade
 					| осуществляет продажу свежезамороженной рыбы 
 					strong оптом по самым низким ценам!
 
-				a(href="price.pdf").btn.btn--md Скачать прайс-лист
+				a(href="price.pdf" target="_blank").btn.btn--md Скачать прайс-лист
 // Title
 .title#About
 	.main-cont
@@ -44,7 +45,7 @@ include ../module/**/*.jade
 .info
 	.main-cont
 		.info__hellow
-			.type.type--bold Рады приветствовать Вас на нашем сайте!
+			.type.type--bold Рады приветствовать Вас на нашем сайте
 
 			p Основным направлением деятельности нашей компании является оптовая продажа свежезамороженой рыбы и других морепродуктов. Мы также можем предложить Вам мелкооптовую и розничную (по избранным позициям) продажу рыбы и морепродуктов и возможность индивидуального заказа.
 
@@ -88,7 +89,7 @@ include ../module/**/*.jade
 //btn-row
 .main-cont
 	.btn-row
-		a(href="price.pdf").btn.btn--md Скачать прайс-лист
+		a(href="price.pdf" target="_blank").btn.btn--md Скачать прайс-лист
 
 //table-price
 .table-price
@@ -128,7 +129,7 @@ include ../module/**/*.jade
 					.sucsses Ваша заявка принята
 
 				p Для того чтобы узнать цены, 
-					a(href="price.pdf").download-link скачайте прайс-лист
+					a(href="price.pdf" target="_blank").download-link скачайте прайс-лист
 // Title
 .title.title--none-marg
 	.main-cont
